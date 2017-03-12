@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>外卖</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/pace.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper-3.4.1.min.css">
+	<script type="text/javascript" src="js/rem.js"></script>
+</head>
+<body>
+		<!--   城市搜索页 -->
+	<div id="search" class="wrap">
+
+	<a class="tit">城市搜索页</a>
+		<a href="#city" class="city">上海</a>
+		
+	<div class="search"><input id="in1" type="text" placeholder="输入学校、商务楼、地址...">
+		<button id='btn'>饿了么搜索</button><button id='bd'>百度搜索</button></div>
+		<ul id='tx'></ul>
+
+	</div>
+
+		<!-- 餐厅列表页 -->
+	
+	<div id="rlist" class="wrap">
+ 	   
+		<div id="rlist-tit">
+			<a href="javascript:history.go(-1)"><img class="sear" src="img/sear1.png"></a>
+			<div class="address"><!-- 浙江省杭州市滨江区长河路475号和瑞科技广场S2幢905室 --></div>
+			<div class="dl">登录</div>
+		</div>
+
+
+
+		<div class="swiper-container">
+		  <div class="swiper-wrapper">
+		    <div class="swiper-slide"><div class="ban-wrap">
+				</div></div>
+		    <div class="swiper-slide"><div class="ban-wrap">
+				</div></div>
+		  </div>
+		   <div class="swiper-pagination"></div>
+		</div> 
+		
+		<div id="bdban">
+			<div class="bdban">
+				<img src="img/b1.png">
+				<div class="float-l">
+					<div class="bdbantx">点外卖</div>
+					<div class="sj"></div>
+				</div>
+			</div>
+		 	<div class="bdban">
+		 		<img src="img/b2.png">
+		 		<div class="float-l">
+		 			<div class="bdbantx lan">超市购</div>
+		 			<div class="cssj"></div>
+		 		</div>
+		 	</div>
+		</div>
+		
+		<div id="fjshop">
+			<div class="fj"> <b>♔</b> 附近商家</div>
+			<ul class="fjshop">
+				<!-- <li>
+					<img src="img/aaa.jpeg" class="shoplogo">
+				
+					<div class="right">
+						<p class="shop-name">金牌外婆家（上海国际啊啊啊）</p>
+						<p class="recent">月销量3705单</p>
+						<p><span class="s-pirce">配送费￥7 </span>  <span class="min">40分钟</span><span class="dis">1800m</span></p>
+					</div>
+				</li> -->
+			</ul>
+			<p class="sh-tip">正在加载...</p>
+		</div>
+
+
+	</div>
+
+
+
+
+	<div id="detail" class="wrap" style="display: none">  <!--  详情页 -->
+		
+		<!-- <div class="qiu"></div> -->
+		<div id="de-head">
+		<!-- 	<img class="shop-logo" src="img/bbb.jpg">
+		<div class="head-tx">
+			<h3>必胜客（周浦万达店）</h3>
+			<div>蜂鸟专送 / 39分钟送达 / 配送费￥5</div>
+			<div class="shop-tip">新用户下单立减20.0元（不与其他活动共享）</div>
+		</div> -->
+		</div>
+
+		<div class="de-main">
+			<div class="shopnav">
+				<a class="shop-tab shopnav-active">
+					<span class="shopnav-tit">商品</span>
+				</a>
+				<a class="shop-tab">
+					<span class="shopnav-tit">商家</span>
+				</a>
+			</div>
+			<div class="main" >
+				<div class="main-left">
+					<ul class="food-nav">
+						<!-- <li></li> -->
+	
+					</ul>
+	
+				</div>
+				
+				<div class="main-right">
+					<div class="info-wrap">
+					<!-- <dl class="food-info">
+						<dt>热销榜</dt>
+						<dd>
+							<img class="food-img" src="img/bbb.jpg">
+							<div class="info-tx">
+								<div class="food-name">超级混沌</div>
+								<div class="food-xl">月销量617份 好评率90%</div>
+								<div class="food-pirce">￥19</div>
+							</div>
+						</dd>			
+					</dl> -->
+				  </div>
+				</div>
+			</div>
+
+			<div class="shop-info">
+			<div>
+				<div class="shop-info-top">
+					<b class="food-score">4.7分</b>
+					<span class="rattx">高于周边商家</span>
+					<span class="rating">66.8%</span>
+					<span class="pl">共3209条评论</span>
+				</div>	
+
+				<div class="pingjia">
+					<ul class="tags">
+						<li>味道好(258)</li>
+
+					</ul>
+				</div>	
+				<div class="shopact">
+					<h3>活动与属性</h3>
+					<div class="icon-wrap">
+						<div class="shop-icon">
+							<b class="icon">新</b>
+							<span class="ic-tx">新用户下单立减20.0元(	不与其它活动同享)</span>						
+						</div>
+					</div>
+				</div>		
+			</div>
+		</div>
+		</div>
+		
+		<div class="shopcar">
+			<div class="shopcar-img ancar">
+				<!-- <img src="img/2.png" alt=""> -->
+				<div class="foodnum">0</div>
+			</div>
+			<div class="allpirce">￥<span class="z-pirce">0</span>
+				<p class="post"></p>
+			</div>
+			<a href="javascript:" class="pay">去结算</a>
+		</div>
+		
+		<div class="shopinfo">
+			<div class="car-wrap">
+				<div class="car-top">
+					<span class="car-tit">购物车</span>
+					<span class="del-car"><img src="img/3.png" alt="">清空</span>
+				</div>
+				<div class="car-main">
+
+			
+
+
+
+				</div>
+			</div>
+			<div class="hei"></div>
+		</div>
+	
+
+	</div>
+
+
+
+	<div id="city" class="wrap">
+
+		<div id="city-wrap">
+		 <div>
+		  	<a href="#search" class="tit" data-city="顶">城市选择</a>
+			<div class="now-city">
+				<div class="n-city">当前定位的城市：</div>
+				<div class="city">上海</div>
+			</div>
+
+			<div class="now-city">
+				<div class="n-city">热门城市</div>
+				<div class="hot"></div>
+			</div>
+
+			<div id="group"></div>
+		
+	  </div>
+	</div>
+		<div class="zm">
+			<div id="zimu"></div>
+		</div>
+
+   </div>
+		
+</body>
+	<script src="js/zepto.js"></script>
+	<script src="js/swiper-3.4.1.jquery.min.js"></script>
+	<script src="js/fastclick.js"></script>
+	<script src="js/pace.js"></script>
+	<script src="js/iscroll.js"></script>
+
+	<script src="js/module/search.js"></script>
+	<script src="js/module/rlist.js"></script>
+	<script src="js/module/detail.js"></script>
+	<script src="js/module/city.js"></script>
+	<script src="js/shopcar/foodlist.js"></script>
+	<script src="js/shopcar/titlist.js"></script>
+	<script src="js/shopcar/car.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+</html>
